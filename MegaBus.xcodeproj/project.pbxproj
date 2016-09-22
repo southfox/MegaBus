@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9517000A1D9346EE008E4068 /* MBCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951700091D9346EE008E4068 /* MBCoreDataManager.swift */; };
+		951700141D935E3B008E4068 /* NSError+MB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951700131D935E3B008E4068 /* NSError+MB.swift */; };
+		951700161D93777F008E4068 /* MBTravelBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951700151D93777F008E4068 /* MBTravelBus.swift */; };
+		951700181D937A49008E4068 /* MBTravelFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951700171D937A49008E4068 /* MBTravelFlight.swift */; };
+		9517001A1D937A6F008E4068 /* MBTravelTrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951700191D937A6F008E4068 /* MBTravelTrain.swift */; };
+		958A97F71D92B04F004A78EA /* MBMegaBus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 958A97F61D92B04F004A78EA /* MBMegaBus.plist */; };
+		958A97FA1D92B5F0004A78EA /* MBServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A97F81D92B1A9004A78EA /* MBServiceManager.swift */; };
+		95FF14171D917D5700714F15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FF14161D917D5700714F15 /* main.m */; };
+		95FF141A1D917D5700714F15 /* MBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FF14191D917D5700714F15 /* MBAppDelegate.m */; };
+		95FF141D1D917D5700714F15 /* MBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FF141C1D917D5700714F15 /* MBViewController.m */; };
+		95FF14201D917D5700714F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FF141E1D917D5700714F15 /* Main.storyboard */; };
+		95FF14231D917D5700714F15 /* MegaBus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95FF14211D917D5700714F15 /* MegaBus.xcdatamodeld */; };
+		95FF14251D917D5700714F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FF14241D917D5700714F15 /* Assets.xcassets */; };
+		95FF14281D917D5700714F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FF14261D917D5700714F15 /* LaunchScreen.storyboard */; };
+		95FF14331D917D5700714F15 /* MegaBusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FF14321D917D5700714F15 /* MegaBusTests.m */; };
+		95FF143E1D917D5700714F15 /* MegaBusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FF143D1D917D5700714F15 /* MegaBusUITests.m */; };
+		95FF144E1D91840800714F15 /* expected_output.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FF144D1D91840800714F15 /* expected_output.png */; };
+		95FF14501D91BF5F00714F15 /* mockup-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FF144F1D91BF5F00714F15 /* mockup-cell.png */; };
+		95FF14531D91C21B00714F15 /* MBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF14521D91C21B00714F15 /* MBTableViewCell.swift */; };
+		95FF14571D91C49B00714F15 /* MBTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF14551D91C49B00714F15 /* MBTravel.swift */; };
+		95FF145D1D91CA9100714F15 /* MBTravel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF145A1D91CA9100714F15 /* MBTravel+CoreDataProperties.swift */; };
+		EF2520721279A8F5480DDC5E /* libPods-MegaBus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 395382CE1EC1157265EB7C6C /* libPods-MegaBus.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95FF142F1D917D5700714F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95FF140A1D917D5700714F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95FF14111D917D5700714F15;
+			remoteInfo = MegaBus;
+		};
+		95FF143A1D917D5700714F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95FF140A1D917D5700714F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95FF14111D917D5700714F15;
+			remoteInfo = MegaBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13F9285BD0EC9064EAF32AC8 /* Pods-MegaBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MegaBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-MegaBus/Pods-MegaBus.release.xcconfig"; sourceTree = "<group>"; };
+		395382CE1EC1157265EB7C6C /* libPods-MegaBus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MegaBus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EE81C41BBC7A7F720FB688 /* Pods-MegaBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MegaBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MegaBus/Pods-MegaBus.debug.xcconfig"; sourceTree = "<group>"; };
+		951700091D9346EE008E4068 /* MBCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBCoreDataManager.swift; sourceTree = "<group>"; };
+		951700131D935E3B008E4068 /* NSError+MB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+MB.swift"; sourceTree = "<group>"; };
+		951700151D93777F008E4068 /* MBTravelBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTravelBus.swift; sourceTree = "<group>"; };
+		951700171D937A49008E4068 /* MBTravelFlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTravelFlight.swift; sourceTree = "<group>"; };
+		951700191D937A6F008E4068 /* MBTravelTrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTravelTrain.swift; sourceTree = "<group>"; };
+		958A97F61D92B04F004A78EA /* MBMegaBus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MBMegaBus.plist; sourceTree = "<group>"; };
+		958A97F81D92B1A9004A78EA /* MBServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBServiceManager.swift; sourceTree = "<group>"; };
+		95FF14121D917D5700714F15 /* MegaBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FF14161D917D5700714F15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95FF14181D917D5700714F15 /* MBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAppDelegate.h; sourceTree = "<group>"; };
+		95FF14191D917D5700714F15 /* MBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAppDelegate.m; sourceTree = "<group>"; };
+		95FF141B1D917D5700714F15 /* MBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBViewController.h; sourceTree = "<group>"; };
+		95FF141C1D917D5700714F15 /* MBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBViewController.m; sourceTree = "<group>"; };
+		95FF141F1D917D5700714F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95FF14221D917D5700714F15 /* MegaBus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MegaBus.xcdatamodel; sourceTree = "<group>"; };
+		95FF14241D917D5700714F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95FF14271D917D5700714F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95FF14291D917D5700714F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95FF142E1D917D5700714F15 /* MegaBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegaBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FF14321D917D5700714F15 /* MegaBusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MegaBusTests.m; sourceTree = "<group>"; };
+		95FF14341D917D5700714F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95FF14391D917D5700714F15 /* MegaBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegaBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FF143D1D917D5700714F15 /* MegaBusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MegaBusUITests.m; sourceTree = "<group>"; };
+		95FF143F1D917D5700714F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95FF144B1D917D9100714F15 /* README.md */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
+		95FF144D1D91840800714F15 /* expected_output.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expected_output.png; sourceTree = "<group>"; };
+		95FF144F1D91BF5F00714F15 /* mockup-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mockup-cell.png"; sourceTree = "<group>"; };
+		95FF14511D91C21A00714F15 /* MegaBus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MegaBus-Bridging-Header.h"; sourceTree = "<group>"; };
+		95FF14521D91C21B00714F15 /* MBTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTableViewCell.swift; sourceTree = "<group>"; };
+		95FF14551D91C49B00714F15 /* MBTravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTravel.swift; sourceTree = "<group>"; };
+		95FF145A1D91CA9100714F15 /* MBTravel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBTravel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95FF140F1D917D5700714F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2520721279A8F5480DDC5E /* libPods-MegaBus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FF142B1D917D5700714F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FF14361D917D5700714F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91AAD7B35FA53411F63495F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				395382CE1EC1157265EB7C6C /* libPods-MegaBus.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95FF14091D917D5700714F15 = {
+			isa = PBXGroup;
+			children = (
+				95FF144B1D917D9100714F15 /* README.md */,
+				95FF14141D917D5700714F15 /* MegaBus */,
+				95FF14311D917D5700714F15 /* MegaBusTests */,
+				95FF143C1D917D5700714F15 /* MegaBusUITests */,
+				95FF14131D917D5700714F15 /* Products */,
+				EC4DBEB3AF35C1832A9BC0C0 /* Pods */,
+				91AAD7B35FA53411F63495F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95FF14131D917D5700714F15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95FF14121D917D5700714F15 /* MegaBus.app */,
+				95FF142E1D917D5700714F15 /* MegaBusTests.xctest */,
+				95FF14391D917D5700714F15 /* MegaBusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95FF14141D917D5700714F15 /* MegaBus */ = {
+			isa = PBXGroup;
+			children = (
+				95FF14581D91C4A700714F15 /* Model */,
+				95FF14181D917D5700714F15 /* MBAppDelegate.h */,
+				95FF14191D917D5700714F15 /* MBAppDelegate.m */,
+				95FF141B1D917D5700714F15 /* MBViewController.h */,
+				95FF141C1D917D5700714F15 /* MBViewController.m */,
+				95FF14521D91C21B00714F15 /* MBTableViewCell.swift */,
+				958A97F81D92B1A9004A78EA /* MBServiceManager.swift */,
+				951700091D9346EE008E4068 /* MBCoreDataManager.swift */,
+				951700131D935E3B008E4068 /* NSError+MB.swift */,
+				95FF14591D91C4B300714F15 /* Resources */,
+				95FF14151D917D5700714F15 /* Supporting Files */,
+				95FF14511D91C21A00714F15 /* MegaBus-Bridging-Header.h */,
+			);
+			path = MegaBus;
+			sourceTree = "<group>";
+		};
+		95FF14151D917D5700714F15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95FF14161D917D5700714F15 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95FF14311D917D5700714F15 /* MegaBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				95FF14321D917D5700714F15 /* MegaBusTests.m */,
+				95FF14341D917D5700714F15 /* Info.plist */,
+			);
+			path = MegaBusTests;
+			sourceTree = "<group>";
+		};
+		95FF143C1D917D5700714F15 /* MegaBusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95FF143D1D917D5700714F15 /* MegaBusUITests.m */,
+				95FF143F1D917D5700714F15 /* Info.plist */,
+			);
+			path = MegaBusUITests;
+			sourceTree = "<group>";
+		};
+		95FF14581D91C4A700714F15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95FF145A1D91CA9100714F15 /* MBTravel+CoreDataProperties.swift */,
+				95FF14551D91C49B00714F15 /* MBTravel.swift */,
+				951700151D93777F008E4068 /* MBTravelBus.swift */,
+				951700171D937A49008E4068 /* MBTravelFlight.swift */,
+				951700191D937A6F008E4068 /* MBTravelTrain.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		95FF14591D91C4B300714F15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				958A97F61D92B04F004A78EA /* MBMegaBus.plist */,
+				95FF141E1D917D5700714F15 /* Main.storyboard */,
+				95FF14241D917D5700714F15 /* Assets.xcassets */,
+				95FF144D1D91840800714F15 /* expected_output.png */,
+				95FF144F1D91BF5F00714F15 /* mockup-cell.png */,
+				95FF14261D917D5700714F15 /* LaunchScreen.storyboard */,
+				95FF14291D917D5700714F15 /* Info.plist */,
+				95FF14211D917D5700714F15 /* MegaBus.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EC4DBEB3AF35C1832A9BC0C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45EE81C41BBC7A7F720FB688 /* Pods-MegaBus.debug.xcconfig */,
+				13F9285BD0EC9064EAF32AC8 /* Pods-MegaBus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95FF14111D917D5700714F15 /* MegaBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95FF14421D917D5700714F15 /* Build configuration list for PBXNativeTarget "MegaBus" */;
+			buildPhases = (
+				EE4708EE61323AA194082176 /* 📦 Check Pods Manifest.lock */,
+				95FF140E1D917D5700714F15 /* Sources */,
+				95FF140F1D917D5700714F15 /* Frameworks */,
+				95FF14101D917D5700714F15 /* Resources */,
+				4C96BF2E15D27B13514AD6F6 /* 📦 Embed Pods Frameworks */,
+				CF75C17C1680CE2CFAEB40D0 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MegaBus;
+			productName = MegaBus;
+			productReference = 95FF14121D917D5700714F15 /* MegaBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95FF142D1D917D5700714F15 /* MegaBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95FF14451D917D5700714F15 /* Build configuration list for PBXNativeTarget "MegaBusTests" */;
+			buildPhases = (
+				95FF142A1D917D5700714F15 /* Sources */,
+				95FF142B1D917D5700714F15 /* Frameworks */,
+				95FF142C1D917D5700714F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95FF14301D917D5700714F15 /* PBXTargetDependency */,
+			);
+			name = MegaBusTests;
+			productName = MegaBusTests;
+			productReference = 95FF142E1D917D5700714F15 /* MegaBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95FF14381D917D5700714F15 /* MegaBusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95FF14481D917D5700714F15 /* Build configuration list for PBXNativeTarget "MegaBusUITests" */;
+			buildPhases = (
+				95FF14351D917D5700714F15 /* Sources */,
+				95FF14361D917D5700714F15 /* Frameworks */,
+				95FF14371D917D5700714F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95FF143B1D917D5700714F15 /* PBXTargetDependency */,
+			);
+			name = MegaBusUITests;
+			productName = MegaBusUITests;
+			productReference = 95FF14391D917D5700714F15 /* MegaBusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95FF140A1D917D5700714F15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Fuchs;
+				TargetAttributes = {
+					95FF14111D917D5700714F15 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					95FF142D1D917D5700714F15 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 95FF14111D917D5700714F15;
+					};
+					95FF14381D917D5700714F15 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 95FF14111D917D5700714F15;
+					};
+				};
+			};
+			buildConfigurationList = 95FF140D1D917D5700714F15 /* Build configuration list for PBXProject "MegaBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95FF14091D917D5700714F15;
+			productRefGroup = 95FF14131D917D5700714F15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95FF14111D917D5700714F15 /* MegaBus */,
+				95FF142D1D917D5700714F15 /* MegaBusTests */,
+				95FF14381D917D5700714F15 /* MegaBusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95FF14101D917D5700714F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FF144E1D91840800714F15 /* expected_output.png in Resources */,
+				95FF14501D91BF5F00714F15 /* mockup-cell.png in Resources */,
+				95FF14281D917D5700714F15 /* LaunchScreen.storyboard in Resources */,
+				95FF14251D917D5700714F15 /* Assets.xcassets in Resources */,
+				95FF14201D917D5700714F15 /* Main.storyboard in Resources */,
+				958A97F71D92B04F004A78EA /* MBMegaBus.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FF142C1D917D5700714F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FF14371D917D5700714F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C96BF2E15D27B13514AD6F6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MegaBus/Pods-MegaBus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF75C17C1680CE2CFAEB40D0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MegaBus/Pods-MegaBus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE4708EE61323AA194082176 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95FF140E1D917D5700714F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FF14531D91C21B00714F15 /* MBTableViewCell.swift in Sources */,
+				95FF14231D917D5700714F15 /* MegaBus.xcdatamodeld in Sources */,
+				951700181D937A49008E4068 /* MBTravelFlight.swift in Sources */,
+				95FF141D1D917D5700714F15 /* MBViewController.m in Sources */,
+				95FF145D1D91CA9100714F15 /* MBTravel+CoreDataProperties.swift in Sources */,
+				958A97FA1D92B5F0004A78EA /* MBServiceManager.swift in Sources */,
+				95FF14571D91C49B00714F15 /* MBTravel.swift in Sources */,
+				951700141D935E3B008E4068 /* NSError+MB.swift in Sources */,
+				9517000A1D9346EE008E4068 /* MBCoreDataManager.swift in Sources */,
+				95FF141A1D917D5700714F15 /* MBAppDelegate.m in Sources */,
+				95FF14171D917D5700714F15 /* main.m in Sources */,
+				9517001A1D937A6F008E4068 /* MBTravelTrain.swift in Sources */,
+				951700161D93777F008E4068 /* MBTravelBus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FF142A1D917D5700714F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FF14331D917D5700714F15 /* MegaBusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FF14351D917D5700714F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FF143E1D917D5700714F15 /* MegaBusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95FF14301D917D5700714F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95FF14111D917D5700714F15 /* MegaBus */;
+			targetProxy = 95FF142F1D917D5700714F15 /* PBXContainerItemProxy */;
+		};
+		95FF143B1D917D5700714F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95FF14111D917D5700714F15 /* MegaBus */;
+			targetProxy = 95FF143A1D917D5700714F15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95FF141E1D917D5700714F15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95FF141F1D917D5700714F15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95FF14261D917D5700714F15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95FF14271D917D5700714F15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95FF14401D917D5700714F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95FF14411D917D5700714F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95FF14431D917D5700714F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45EE81C41BBC7A7F720FB688 /* Pods-MegaBus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MegaBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuchs.goeuro.MegaBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MegaBus/MegaBus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95FF14441D917D5700714F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13F9285BD0EC9064EAF32AC8 /* Pods-MegaBus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MegaBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuchs.goeuro.MegaBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MegaBus/MegaBus-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		95FF14461D917D5700714F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MegaBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuchs.goeuro.MegaBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MegaBus.app/MegaBus";
+			};
+			name = Debug;
+		};
+		95FF14471D917D5700714F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MegaBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuchs.goeuro.MegaBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MegaBus.app/MegaBus";
+			};
+			name = Release;
+		};
+		95FF14491D917D5700714F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MegaBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuchs.goeuro.MegaBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MegaBus;
+			};
+			name = Debug;
+		};
+		95FF144A1D917D5700714F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MegaBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuchs.goeuro.MegaBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MegaBus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95FF140D1D917D5700714F15 /* Build configuration list for PBXProject "MegaBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FF14401D917D5700714F15 /* Debug */,
+				95FF14411D917D5700714F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95FF14421D917D5700714F15 /* Build configuration list for PBXNativeTarget "MegaBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FF14431D917D5700714F15 /* Debug */,
+				95FF14441D917D5700714F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95FF14451D917D5700714F15 /* Build configuration list for PBXNativeTarget "MegaBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FF14461D917D5700714F15 /* Debug */,
+				95FF14471D917D5700714F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95FF14481D917D5700714F15 /* Build configuration list for PBXNativeTarget "MegaBusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FF14491D917D5700714F15 /* Debug */,
+				95FF144A1D917D5700714F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		95FF14211D917D5700714F15 /* MegaBus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				95FF14221D917D5700714F15 /* MegaBus.xcdatamodel */,
+			);
+			currentVersion = 95FF14221D917D5700714F15 /* MegaBus.xcdatamodel */;
+			path = MegaBus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 95FF140A1D917D5700714F15 /* Project object */;
+}

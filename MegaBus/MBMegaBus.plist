@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ServiceManager</key>
+	<dict>
+		<key>trains</key>
+		<string>https://api.myjson.com/bins/3zmcy</string>
+		<key>flights</key>
+		<string>https://api.myjson.com/bins/w60i</string>
+		<key>buses</key>
+		<string>https://api.myjson.com/bins/37yzm</string>
+	</dict>
+</dict>
+</plist>

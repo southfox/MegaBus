@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="MBTravel" representedClassName=".MBTravel" syncable="YES">
+        <attribute name="arrival_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departure_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="number_of_stops" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="price_in_euros" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="provider_logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="travel_mode" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MBTravel" positionX="0" positionY="0" width="128" height="150"/>
+    </elements>
+</model>
